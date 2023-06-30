@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu és estrangeiro??</title>
+</head>
+<body>
+    <h1>De qual país voce é: </h1>
+    <input type="text" placeholder="ex: 'eua' ou 'br'..." id="txt1">
+    <input type="button" value="Estrangeira???" onclick="testa()">
+
+    <div id="res"></div>
+
+    <script>
+        function testa() {
+            var txt1 = window.document.querySelector('input#txt1')
+            var res = window.document.querySelector('#res')
+            var txt = txt1.value
+
+            if ( txt != 'br') {
+                res.innerHTML = `<p>Você é estrangeiro</p>`
+            } else {
+                res.innerHTML = `<p>BRASILEIROOOOOO!!!!!!  UwU</p>`
+            }
+        }
+    </script>
+</body>
+</html>

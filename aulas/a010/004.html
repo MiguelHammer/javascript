@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escreva no Documento</title>
+    <style>
+        body{
+            font: normal 3em Arial;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var name = window.prompt('Qual é seu nome? ')
+        document.write(`<strong> ${name}</strong>, seu nome tem ${name.length} letras.  <br>`) //escreva no documento ....
+        document.write(`Vou transforma em tudo Maiúsculo: ${name.toUpperCase()} <br>`)
+        document.write(`Minúscula agora: ${name.toLowerCase()} `)
+
+    </script>
+</body>
+</html>

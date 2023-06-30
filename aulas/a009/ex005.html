@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="pr">Iniciando estudos DOM</h1>
+    <p class="re">Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+
+    <div>Clique em mim</div>
+
+    <script>
+        //Pgando Element por nome da TAG
+        window.document.getElementsByTagName('p')[1].innerHTML = `<strong>Como é amigo? </strong>`;
+
+        //Pegado Element por ID
+        window.document.getElementById('pr').innerHTML = `Selecionei Element por ID, pelo JS.`;
+
+        //QuerySlector
+        window.document.querySelector('p.re').innerHTML = 'ola'
+
+    
+    </script>
+</body>
+</html>

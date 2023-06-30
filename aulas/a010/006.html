@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        div{
+            background-color: lightgreen;
+            text-align: center;
+            line-height: 300px;
+            color: #fff;
+            margin: auto;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        <h1>Interaja...</h1>
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerHTML = `<h1>CLICOU</h1>`
+            a.style.backgroundColor = 'blue'
+        }
+        function sair(){
+            a.style.backgroundColor = 'lightgreen'
+            a.innerHTML = '<h1>Interaja...</h1>'
+        }
+    </script>
+</body>
+</html>
